@@ -8,7 +8,7 @@ selector('.busca').addEventListener('submit', async (event)=>{
     if(input !== ''){  // Caso tiver algo digitado
         showWarning('Carregando...')
         encodeURI(input)  // Passa do jeito que temos que passar para uma URL
-        let results = await fetch("https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=525b6d2a5d6230e9df6449a483094f3a&units=metric&lang=pt_br")
+        let results = await fetch("https://api.openweathermap.org/ aqui seria o ID que disponibilizam no site")
         let json = await results.json()
         if(json.cod == 200){  // Encontrou a cidade
             showInfo({
